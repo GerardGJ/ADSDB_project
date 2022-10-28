@@ -44,6 +44,6 @@ if __name__ == '__main__':
     window=Tk()
     window.title('ADSDB Project')
     window.geometry("300x200+10+20")
-    button = Button(window, text="Run Data Backbone", command=main) 
+    button = Button(window, text="Execute project", command=main) 
     button.pack()
     window.mainloop()
