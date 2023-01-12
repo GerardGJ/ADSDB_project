@@ -7,7 +7,7 @@ import datetime
 from sqlalchemy import create_engine
 
 def trustedBet_V1():
-    SELECT_2020_GAMES = """select * from tennis_data td where td."Date" >= '01-01-2020' and td."Date" <= '12-31-2020'"""
+    SELECT_2020_GAMES = """select * from tennis_data td where td."Date"::timestamp >= '01-01-2020' and td."Date"::timestamp <= '12-31-2020'"""
 
     conn_string = 'postgresql://biel.caballero:DB130201@postgresfib.fib.upc.edu:6433/ADSDBbiel.caballero'
     db = create_engine(conn_string)
